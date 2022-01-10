@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         // There is a bug in this function! One of your exercises is to find it!
 
+        // Hello world this is a new commen!
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -39,6 +41,6 @@ public class MainActivity extends AppCompatActivity {
 
     public boolean hasResult() {
         TextView view = this.findViewById(R.id.result);
-        return Utils.isEmpty(view.getText().toString());
+        return !Utils.isEmpty(view.getText().toString());
     }
 }
